@@ -11,9 +11,6 @@ from EmikoRobot import telethn as client
 spam_chats = []
 
 
-spam_chats = []
-
-
 @Client.on(events.NewMessage(pattern="^/all ?(.*)"))
 @Client.on(events.NewMessage(pattern="^@all ?(.*)"))
 async def mentionall(event):
