@@ -82,7 +82,7 @@ def get_readable_time(seconds: int) -> str:
 
 PM_START_TEXT = """
 *Hello {} !*
-✪ I'm an anime-theme management bot [✨](https://telegra.ph/file/00a9015afbdc16eafdd5a.jpg)
+✪ I'm an anime-theme management bot by @shshtst
 ────────────────────────
 × *Uptime:* `{}`
 × `{}` *users, across* `{}` *chats.*
@@ -92,7 +92,7 @@ PM_START_TEXT = """
 
 buttons = [
     [
-        InlineKeyboardButton(text="About SYN ROBOT", callback_data="emiko_"),
+        InlineKeyboardButton(text="About me", callback_data="emiko_"),
     ],
     [
         InlineKeyboardButton(text="Get Help", callback_data="help_back"),
@@ -442,7 +442,7 @@ def emiko_about_callback(update, context):
                 [
                  [
                     InlineKeyboardButton(text="Support", url="t.me/synxsupport"),
-                    InlineKeyboardButton(text="Updates", url="https://t.me/shshtst"),
+                    InlineKeyboardButton(text="Updates", url="https://t.me/synxupdate"),
                  ],
                  [
                     InlineKeyboardButton(text="Go Back", callback_data="emiko_"),
