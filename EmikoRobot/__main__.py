@@ -92,7 +92,7 @@ PM_START_TEXT = """
 
 buttons = [
     [
-        InlineKeyboardButton(text="About Syn Robot", callback_data="emiko_"),
+        InlineKeyboardButton(text="About SYN ROBOT", callback_data="emiko_"),
     ],
     [
         InlineKeyboardButton(text="Get Help", callback_data="help_back"),
@@ -102,7 +102,7 @@ buttons = [
     ],
     [
         InlineKeyboardButton(
-            text="➗ Add Syn To Your Group ➗", url="t.me/synxrobot?startgroup=new"),
+            text="➗ Add To Your Group ➗", url="t.me/synxrobot?startgroup=new"),
     ],
 ]
 
@@ -408,7 +408,7 @@ def emiko_about_callback(update, context):
     elif query.data == "emiko_admin":
         query.message.edit_text(
             text=f"*๏ Let's make your group bit effective now*"
-            "\nCongragulations, EmikoRobot now ready to manage your group."
+            "\nCongragulations, Syn Robot now ready to manage your group."
             "\n\n*Admin Tools*"
             "\nBasic Admin tools help you to protect and powerup your group."
             "\nYou can ban members, Kick members, Promote someone as admin through commands of bot."
@@ -435,14 +435,14 @@ def emiko_about_callback(update, context):
         )
     elif query.data == "emiko_support":
         query.message.edit_text(
-            text="*๏ Emiko support chats*"
-            "\nJoin My Support Group/Channel for see or report a problem on Emiko.",
+            text="*๏ Syn support chats*"
+            "\nJoin My Support Group/Channel for see or report a problem on Syn.",
             parse_mode=ParseMode.MARKDOWN,
             reply_markup=InlineKeyboardMarkup(
                 [
                  [
-                    InlineKeyboardButton(text="Support", url="t.me/emikosupport"),
-                    InlineKeyboardButton(text="Updates", url="https://t.me/KennedyProject"),
+                    InlineKeyboardButton(text="Support", url="t.me/synxsupport"),
+                    InlineKeyboardButton(text="Updates", url="https://t.me/shshtst"),
                  ],
                  [
                     InlineKeyboardButton(text="Go Back", callback_data="emiko_"),
@@ -477,8 +477,8 @@ def emiko_about_callback(update, context):
                     InlineKeyboardButton(text="Noob-Kittu", url="https://github.com/noob-kittu"),
                  ],
                  [
-                    InlineKeyboardButton(text="Queen Arzoo", url="https://github.com/QueenArzoo"),
-                    InlineKeyboardButton(text="Paul Larsen", url="https://github.com/PaulSonOfLars"),
+                    InlineKeyboardButton(text="Paul", url="https://t.me/shshtst"),
+                    InlineKeyboardButton(text="xsyn1100", url="https://github.com/xsyn1100"),
                  ],
                  [
                     InlineKeyboardButton(text="Go Back", callback_data="emiko_"),
