@@ -45,6 +45,7 @@ async def bug(_, msg: Message):
     datetimes_fmt = "%d-%m-%Y"
     datetimes = datetime.utcnow().strftime(datetimes_fmt)
 
+    thumb = 
     
     bug_report = f"""
 **#BUG : ** **@{owner_usn}**
@@ -81,13 +82,14 @@ async def bug(_, msg: Message):
                     [
                         [
                             InlineKeyboardButton(
-                                "• Close", callback_data=f"close_reply")
+                                "Close", callback_data=f"close_reply")
                         ]
                     ]
                 )
             )
             await Client.send_photo(
                 log,
+                photo=thumb,
                 caption=f"{bug_report}",
                 reply_markup=InlineKeyboardMarkup(
                     [
@@ -97,14 +99,14 @@ async def bug(_, msg: Message):
                         ],
                         [
                             InlineKeyboardButton(
-                                "• Close", callback_data="close_send_photo")
+                                "❌ Close", callback_data="close_send_photo")
                         ]
                     ]
                 )
             )
         else:
             await msg.reply_text(
-                f"💡 <b>Contoh: /bug assisten gak naik</b>",
+                f"• <b>Contoh:/bug bot musik lag</b>",
             )
         
 
