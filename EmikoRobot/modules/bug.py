@@ -82,7 +82,7 @@ async def bug(_, msg: Message):
                     [
                         [
                             InlineKeyboardButton(
-                                "Close", callback_data=f"close_reply")
+                                "• Close", callback_data=f"close_reply")
                         ]
                     ]
                 )
@@ -99,14 +99,14 @@ async def bug(_, msg: Message):
                         ],
                         [
                             InlineKeyboardButton(
-                                "❌ Close", callback_data="close_send_photo")
+                                "• Close", callback_data="close_send_photo")
                         ]
                     ]
                 )
             )
         else:
             await msg.reply_text(
-                f"• <b>Contoh:/bug bot musik lag</b>",
+                f" <b>Contoh:/bug bot musik lag</b>",
             )
         
 
