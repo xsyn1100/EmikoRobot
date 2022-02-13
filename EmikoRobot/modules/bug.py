@@ -104,7 +104,7 @@ async def bug(_, msg: Message):
             )
         else:
             await msg.reply_text(
-                f"❎ <b>No bug to Report!</b>",
+                f"💡 <b>Contoh: /bug assisten gak naik</b>",
             )
         
 
