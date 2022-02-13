@@ -81,14 +81,13 @@ async def bug(_, msg: Message):
                     [
                         [
                             InlineKeyboardButton(
-                                "Close", callback_data=f"close_reply")
+                                "• Close", callback_data=f"close_reply")
                         ]
                     ]
                 )
             )
             await Client.send_photo(
                 log,
-                photo=thumb,
                 caption=f"{bug_report}",
                 reply_markup=InlineKeyboardMarkup(
                     [
