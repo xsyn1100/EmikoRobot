@@ -45,7 +45,7 @@ async def bug(_, msg: Message):
     datetimes_fmt = "%d-%m-%Y"
     datetimes = datetime.utcnow().strftime(datetimes_fmt)
 
-    thumb = "https://telegra.ph/file/51894f2116cf09a0fba15.jpg"
+    thumb = "https://telegra.ph/file/c522d97d0fa3eb5ca99b7.jpg"
     
     bug_report = f"""
 **#BUG : ** **@{owner_usn}**
@@ -60,13 +60,13 @@ async def bug(_, msg: Message):
 
     
     if msg.chat.type == "private":
-        await msg.reply_text("❎ <b>This command only works in groups.</b>")
+        await msg.reply_text("✗ <b>This command only works in groups.</b>")
         return
 
     if user_id == owner_id:
         if bugs:
             await msg.reply_text(
-                "❎ <b>How can be owner bot reporting bug??</b>",
+                "✗ <b>How can be owner bot reporting bug??</b>",
             )
             return
         else:
@@ -77,12 +77,12 @@ async def bug(_, msg: Message):
         if bugs:
             await msg.reply_text(
                 f"<b>Bug Report : {bugs}</b>\n\n"
-                "✅ <b>The bug was successfully reported to the support group!</b>",
+                "✓ <b>The bug was successfully reported to the support group!</b>",
                 reply_markup=InlineKeyboardMarkup(
                     [
                         [
                             InlineKeyboardButton(
-                                "• Close", callback_data=f"close_reply")
+                                "✗ Close", callback_data=f"close_reply")
                         ]
                     ]
                 )
@@ -99,7 +99,7 @@ async def bug(_, msg: Message):
                         ],
                         [
                             InlineKeyboardButton(
-                                "• Close", callback_data="close_send_photo")
+                                "✗ Close", callback_data="close_send_photo")
                         ]
                     ]
                 )
