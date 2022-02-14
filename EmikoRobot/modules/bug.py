@@ -109,7 +109,7 @@ async def bug(_, msg: Message):
             )
         else:
             await msg.reply_text(
-                f"➡ <b> Contoh: /bug bot musik lag</b>",
+                f" <b> Contoh: /bug bot musik lag</b>",
             )
         
 
