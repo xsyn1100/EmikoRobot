@@ -12,7 +12,7 @@ heroku_api = "https://api.heroku.com"
 Heroku = heroku3.from_key(HEROKU_API_KEY)
 
 
-@register(pattern="^/(set|see|del) var(?: |$)(.*)(?: |$)([\s\S]*)")
+@register(pattern="^/(set|see|del) var(?: |$)(?: |$)([\s\S]*)")
 async def variable(var):
     if var.fwd_from:
         return
@@ -188,7 +188,7 @@ async def _(dyno):
         dyno.chat_id,
         "logs.txt",
         reply_to=dyno.id,
-        caption="Emiko logs.",
+        caption="Syn Robot logs.",
     )
 
     await asyncio.sleep(5)
